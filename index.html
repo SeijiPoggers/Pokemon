@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PokeTufos</title>
+</head>
+
+<body>
+
+    <div class="circle"></div>
+    <img class="logo" src="./images/logo.png" alt="logo">
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>Não é só um pokémon é uma <span>Tufada</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus accusantium corrupti quibusdam placeat
+                ducimus, doloremque sapiente fuga? Magnam ut, qui quam corporis, esse, eos harum earum veniam corrupti
+                sit impedit.</p>
+            <button>( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°) ( ͡° ͜ʖ ͡°)</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img class="starcoffee" src="./images/img1.png" alt="copo de verde">
+        </div>
+
+    </div>
+
+    <div class="menu">
+        <img class="copop green" src="./images/img-pequena1.png" alt="icon 1">
+        <img class="copop yellow" src="./images/img-pequena2.png" alt="icon 2">
+        <img class="copop pink" src="./images/img-pequena3.png" alt="icon 3">
+    </div>
+
+</body>
+
+<script>
+    let circle = document.querySelector(".circle")
+    let imgcopo = document.querySelector(".starcoffee")
+    let green = document.querySelector(".green")
+    let yellow = document.querySelector(".yellow")
+    let pink = document.querySelector(".pink")
+
+    green.addEventListener("click", () => {
+        imgcopo.src = "./images/img1.png"
+        circle.style.background="#999999"
+    })
+
+    yellow.addEventListener("click", () => {
+        imgcopo.src = "./images/img2.png"
+        circle.style.background="#89cff0"
+    })
+
+    pink.addEventListener("click", () => {
+        imgcopo.src = "./images/img3.png"
+        circle.style.background="#cefad0"
+    })
+</script>
+
+</html>
